@@ -1,0 +1,8 @@
+make CDF_LIB_PATH=/home/xw904346/src/netcdf/install-4.1.3/lib/ CDF_MOD_PATH=/home/xw904346/src/netcdf/install-4.1.3/include/ COMPILER=gfortran
+
+make CDF_LIB_PATH=/home/xw904346/src/netcdf/install-4.1.3/lib/ CDF_MOD_PATH=/home/xw904346/src/netcdf/install-4.1.3/include/ COMPILER=mpi
+
+make CDF_LIB_PATH=/home/xw904346/src/netcdf/install-4.1.3/lib/ CDF_MOD_PATH=/home/xw904346/src/netcdf/install-4.1.3/include/ COMPILER=gfortran clean
+
+
+make CDF_LIB_PATH=/home/db903833/src/netcdf/install-4.1.3/lib/ CDF_MOD_PATH=/home/db903833/src/netcdf/install-4.1.3/include/ COMPILER=gfortran

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <code-assistance-data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <code-model-enabled>true</code-model-enabled>
+    </code-assistance-data>
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>0</activeConfTypeElem>
+        <activeConfIndexElem>1</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/control/shared/prognostics.F90</url>
+            <bookmark id="1">
+                <name/>
+                <line>87</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/control/standalone/jules.F90</url>
+            <bookmark id="2">
+                <name/>
+                <line>33</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/xw904346/SatWin/jules/JULES_trunk/src/control/standalone/mpi/mpi_comms_mod.F90</file>
+            <file>file:/home/xw904346/SatWin/jules/JULES_trunk/src/control/standalone/mpi/pf_minimal.F90</file>
+            <file>file:/home/xw904346/SatWin/jules/JULES_trunk/Makefile</file>
+        </group>
+    </open-files>
+</project-private>
