@@ -282,7 +282,7 @@ SRC_DIRS = src/params/standalone                                \
            src/initialisation/standalone/params                 \
            src/control/standalone/spinup                        \
            src/control/standalone/update                        \
-	   src/control/standalone/mpi				\
+	   src/control/standalone/mpi_model		        \
            src/initialisation/standalone                        \
            src/control/imogen                                   \
            src/control/standalone                               \
@@ -297,7 +297,7 @@ MAKE_SRC_DIRS=$(SRC_DIRS:%=make_%)
 
 CLEAN_DEPENDENCIES += $(CLEAN_SRC_DIRS)
 
-PFPATH = $(JULESDIR)/src/control/standalone/mpi
+PFPATH = $(JULESDIR)/src/control/standalone/da_filter
 
 ######################################
 ## Dependencies for building library##
@@ -305,6 +305,7 @@ PFPATH = $(JULESDIR)/src/control/standalone/mpi
 ######################################
 
 ifeq ($(_MPI_), 1)  #this is set in Makefile.comp.gfortran.mpi
+    DA_EXE_DIR = $(JULESDIR)/src/control/standalone/da_filter
     all : $(EXENAME) pf
 else
     all : $(EXENAME)
@@ -335,9 +336,11 @@ drhook : $(HEADMAKE)
 $(MAKE_SRC_DIRS) : make_% : $(HEADMAKE)
 	@$(MAKE) -C $*
 
-pf : $(PFPATH)/pf_minimal.F90
-	$(FC) $(FCOPTS) -o pf_minimal.exe $(PFPATH)/pf_minimal.F90 $(PFPATH)/pf_mpi_mod.F90 $(MOD_PATH)
+#pf : $(PFPATH)/pf_minimal.F90
+#	$(FC) $(FCOPTS) -o pf_minimal.exe $(PFPATH)/pf_minimal.F90 $(PFPATH)/pf_mpi_mod.F90 $(MOD_PATH)
 
+pf:
+	@$(MAKE) -C $(DA_EXE_DIR)
 
 ######################################
 ## Dependencies for cleaning.       ##
