@@ -1,0 +1,120 @@
+  file_unit = 0
+  ! Search the allowed unit numbers until we find one with nothing connected
+    DO count = 1,MAX_UNIT_NUMBER
+  ! Avoid units for standard i/o
+      IF ( count == UNIT_STDIN .OR. count == UNIT_STDOUT ) CYCLE
+
+  ! Find out if anything is connected to this unit.
+      INQUIRE(UNIT=count, OPENED=unit_in_use )
+      IF ( .NOT. unit_in_use ) THEN
+  ! This unit is free, so exit the loop
+        file_unit = count
+        EXIT
+      END IF
+    END DO
+
+
+
+    !WRITE (file_name, '(a, I2.2)'), "aa_log_", pf_id
+    !PRINT *, file_name
+    !OPEN(UNIT=file_unit, FILE=file_name, STATUS='REPLACE', IOSTAT=file_err)
+    !CALL MPI_FILE_OPEN(MPI_COMM_SELF, file_name, MPI_MODE_CREATE, &
+     !                             MPI_INFO_NULL, fhandle, mpi_err)
+   ! IF (mpi_err .NE. MPI_SUCCESS ) THEN
+      !  PRINT *, 'Cannot open file.'
+  !  ELSE
+     !   PRINT *, 'File opened.'
+  !  ENDIF
+    !PRINT*, "PF starting "
+  
+    !WRITE (mpi_msg, '(A)') "PF starting "
+    CALL MPI_FILE_WRITE (fhandle, mpi_msg, LEN(mpi_msg), MPI_CHARACTER, mpi_status, mpi_err)
+    !WRITE(file_unit, '(A)') "PF starting "
+
+    CALL MPI_FILE_CLOSE(fhandle, mpi_err)
+
+    
+    
+    
+    
+    pf_colour = 10000
+    couple_colour=9999
+    call MPI_INIT (mpi_err)
+    
+    da = 1
+    call MPI_COMM_RANK (MPI_COMM_WORLD,world_id,     mpi_err)
+    call mpi_comm_size (mpi_comm_world,world_size,   mpi_err)
+    call mpi_comm_split(mpi_comm_world,da,           world_id,  pf_mpi_comm, mpi_err)
+    call mpi_comm_rank (pf_mpi_comm,   pfrank,       mpi_err)
+    call mpi_comm_size (pf_mpi_comm,   npfs,          mpi_err)
+    call MPI_COMM_SPLIT(MPI_COMM_WORLD,couple_colour,world_size,CPL_MPI_COMM,mpi_err)
+    call MPI_COMM_RANK (CPL_MPI_COMM,  myRank,       mpi_err)
+    call MPI_COMM_SIZE (CPL_MPI_COMM,  nens,         mpi_err)
+    
+    nens = nens-npfs
+    print*,'DA'
+    print*,'nens = ',nens
+    print*,'npfs = ',npfs
+    
+    
+    count = 0
+    do particle = 1,nens
+       if(real(particle-1) .ge. real(nens*(pfrank))/real(npfs) .and.&
+            & real(particle-1) .lt. real(nens*(pfrank+1))/real(npfs))&
+            & then
+          count = count + 1
+          pf%particles(count) = particle
+       end if
+    end do
+    
+    
+    
+    CALL MPI_INIT(empi_err)
+
+        PRINT *, 'PF: MPI initialising.'
+
+        !Get the global id on the world communicator (which includes all the models too)
+        CALL MPI_COMM_RANK(MPI_COMM_WORLD, world_id, empi_err)
+        !Get the total number of processes running in this MPI environment
+        CALL MPI_COMM_SIZE(MPI_COMM_WORLD, world_size, empi_err)
+        
+        ! this split() is completely unnecessary since the communicator 'pf_mpi_comm' is never used
+        CALL MPI_COMM_SPLIT(MPI_COMM_WORLD, c_pf_colour/da, world_id, pf_mpi_comm, empi_err)
+        
+        !get the rank of this process on the communicator
+        CALL MPI_COMM_RANK(pf_mpi_comm, m_filter_id_rank/pfrank, empi_err) 
+        CALL MPI_COMM_SIZE(pf_mpi_comm, num_filters/npfs, empi_err) 
+        
+        ! create/get a communicator for the model-filter coupler
+        CALL MPI_COMM_SPLIT(MPI_COMM_WORLD, c_coupling_colour/couple_colour, world_id or world_size?, CPL_MPI_COMM, empi_err)
+        ! what is our id on the coupling communicator?
+        CALL MPI_COMM_RANK(CPL_MPI_COMM, filter_coupling_id/myRank, empi_err)
+        ! and how many processes are on it?
+        CALL MPI_COMM_SIZE(CPL_MPI_COMM, total_procs_coupled/nens, empi_err)
+        
+        total_models = total_procs_coupled/nens - num_filters/npfs
+        nens = nens-npfs
+        
+        rtmp/count = 1
+        DO model_rank_id/particle= 0, total_models/nens-1
+            IF (real(model_rank_id/particle) .ge. real(total_models/nens * (XXXXfilter_coupling_id/pfrank))/real(num_filters/npfs) .and.&
+                & real(model_rank_id/particle) .lt. real(total_models/nens * (XXXfilter_coupling_id/pfrank + 1))/real(num_filters/npfs)) THEN
+                models(rtmp/count) = model_rank_id/particle
+                rtmp/count = rtmp/count + 1
+            END IF
+        END DO
+
+
+
+CALL empi_wrap_send(pf%psi(:,k),state_dim, particle)
+
+CALL empi_wrap_receive(pf%psi(:,k), state_dim, particle)
+
+CALL empi_wrap_allgatherv(c, pf%count, csorted)
+
+    ENUM, BIND(C)
+        ENUMERATOR :: MODE_IN_PLACE = 1
+    END ENUM
+    ENUM, BIND(C)
+        ENUMERATOR :: OPERATOR_SUM = 1, OPERATOR_MEAN = 2
+    END ENUM
