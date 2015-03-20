@@ -1,0 +1,451 @@
+GFORTRAN module version '0' created from driver_ncdf_mod.F90 on Tue Mar 17 17:45:33 2015
+MD5:d68f8b83112e6b85b3ae1931c555ddea -- If you edit this, you'll get what you deserve.
+
+(() () () ()
+() () () () () () () () () () () () () () () () () () () () () () ())
+
+()
+
+(('to_string' 'string_utils_mod' 2 3 4 5))
+
+()
+
+()
+
+(4 'logical_to_string' 'string_utils_mod' 'logical_to_string' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (CHARACTER 1
+0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 6 0 (7) ()
+8 () () () 0 0)
+5 'int_to_string' 'string_utils_mod' 'int_to_string' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 9 0 (10) () 11
+() () () 0 0)
+3 'real_to_string' 'string_utils_mod' 'real_to_string' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 12 0 (13) ()
+14 () () () 0 0)
+2 'complex_to_string' 'string_utils_mod' 'complex_to_string' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (CHARACTER 1
+0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 15 0 (16)
+() 17 () () () 0 0)
+18 'driver_ncdf_mod' 'driver_ncdf_mod' 'driver_ncdf_mod' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+19 'extensions' 'driver_ncdf_mod' 'extensions' 1 ((VARIABLE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION DATA) (CHARACTER 1
+0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '15'))) 0 0 () (1
+EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER
+4 0 0 INTEGER ()) 0 '2')) 0 () () () 0 0)
+20 'file_ncdf' 'driver_ncdf_mod' 'file_ncdf' 1 ((DERIVED UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((
+21 'id' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (22 'name' (CHARACTER 1
+0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '500'))) () (
+UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ())
+(23 'mode' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (24 'record_dim' (
+INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0
+'-1')) (25 'current_record' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '1')) (26 'nvars' (INTEGER 4 0 0 INTEGER ())
+() (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0')) (27 'vars' (
+DERIVED 28 0 0 DERIVED ()) (1 EXPLICIT (CONSTANT (INTEGER 4 0 0 INTEGER
+()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '30')) (UNKNOWN-FL
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN DIMENSION) UNKNOWN-ACCESS ()))
+PUBLIC (() ()) () 0 0)
+29 'file_ncdf_advance' 'driver_ncdf_mod' 'file_ncdf_advance' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 30 0 (31) () 0 () () () 0 0)
+32 'file_ncdf_close' 'driver_ncdf_mod' 'file_ncdf_close' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 33 0 (34) () 0 () () () 0 0)
+35 'file_ncdf_def_attr_char' 'driver_ncdf_mod' 'file_ncdf_def_attr_char'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 36 0 (37 38 39 40) () 0 () () () 0 0)
+41 'file_ncdf_def_attr_int' 'driver_ncdf_mod' 'file_ncdf_def_attr_int' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 42 0 (43 44 45 46) () 0 () () () 0 0)
+47 'file_ncdf_def_attr_real' 'driver_ncdf_mod' 'file_ncdf_def_attr_real'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (
+UNKNOWN 0 0 0 UNKNOWN ()) 48 0 (49 50 51 52) () 0 () () () 0 0)
+53 'file_ncdf_def_dim' 'driver_ncdf_mod' 'file_ncdf_def_dim' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0
+0 INTEGER ()) 54 0 (55 56 57) () 58 () () () 0 0)
+59 'file_ncdf_def_record_dim' 'driver_ncdf_mod' 'file_ncdf_def_record_dim'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (
+INTEGER 4 0 0 INTEGER ()) 60 0 (61 62) () 63 () () () 0 0)
+64 'file_ncdf_def_var' 'driver_ncdf_mod' 'file_ncdf_def_var' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION
+ALWAYS_EXPLICIT) (INTEGER 4 0 0 INTEGER ()) 65 0 (66 67 68 69) () 70 ()
+() () 0 0)
+71 'file_ncdf_enddef' 'driver_ncdf_mod' 'file_ncdf_enddef' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 72 0 (73) () 0 () () () 0 0)
+74 'file_ncdf_inquire_dim' 'driver_ncdf_mod' 'file_ncdf_inquire_dim' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN
+0 0 0 UNKNOWN ()) 75 0 (76 77 78 79 80) () 0 () () () 0 0)
+81 'file_ncdf_inquire_var' 'driver_ncdf_mod' 'file_ncdf_inquire_var' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 82 0 (83 84 85 86 87 88) ()
+0 () () () 0 0)
+89 'file_ncdf_introspect' 'driver_ncdf_mod' 'file_ncdf_introspect' 1 ((
+PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0
+0 0 UNKNOWN ()) 90 0 (91) () 0 () () () 0 0)
+92 'file_ncdf_open' 'driver_ncdf_mod' 'file_ncdf_open' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN FUNCTION) (DERIVED 20 0 0
+DERIVED ()) 93 0 (94 95) () 96 () () () 0 0)
+97 'file_ncdf_read_var_1d' 'driver_ncdf_mod' 'file_ncdf_read_var_1d' 1 (
+(PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 98 0 (99 100 101 102 103) ()
+0 () () () 0 0)
+104 'file_ncdf_read_var_2d' 'driver_ncdf_mod' 'file_ncdf_read_var_2d' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 105 0 (106 107 108 109 110)
+() 0 () () () 0 0)
+111 'file_ncdf_read_var_3d' 'driver_ncdf_mod' 'file_ncdf_read_var_3d' 1
+((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 112 0 (113 114 115 116 117)
+() 0 () () () 0 0)
+118 'file_ncdf_read_var_scalar' 'driver_ncdf_mod'
+'file_ncdf_read_var_scalar' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 119 0 (120 121 122
+123) () 0 () () () 0 0)
+124 'file_ncdf_seek' 'driver_ncdf_mod' 'file_ncdf_seek' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 125 0 (126 127) () 0 () () () 0 0)
+128 'file_ncdf_write_var_1d' 'driver_ncdf_mod' 'file_ncdf_write_var_1d'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 129 0 (130 131 132 133 134)
+() 0 () () () 0 0)
+135 'file_ncdf_write_var_2d' 'driver_ncdf_mod' 'file_ncdf_write_var_2d'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 136 0 (137 138 139 140 141)
+() 0 () () () 0 0)
+142 'file_ncdf_write_var_3d' 'driver_ncdf_mod' 'file_ncdf_write_var_3d'
+1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE
+ALWAYS_EXPLICIT) (UNKNOWN 0 0 0 UNKNOWN ()) 143 0 (144 145 146 147 148)
+() 0 () () () 0 0)
+149 'file_ncdf_write_var_scalar' 'driver_ncdf_mod'
+'file_ncdf_write_var_scalar' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 150 0 (151 152 153
+154) () 0 () () () 0 0)
+155 'io_constants' 'io_constants' 'io_constants' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+156 'log_debug' 'logging_mod' 'log_debug' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 157 0 (
+158 159) () 0 () () () 0 0)
+160 'log_error' 'logging_mod' 'log_error' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 161 0 (
+162 163) () 0 () () () 0 0)
+164 'log_fatal' 'logging_mod' 'log_fatal' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 165 0 (
+166 167) () 0 () () () 0 0)
+168 'log_fatal_ncdf' 'driver_ncdf_mod' 'log_fatal_ncdf' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0
+UNKNOWN ()) 169 0 (170 171 172) () 0 () () () 0 0)
+173 'log_info' 'logging_mod' 'log_info' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 174 0 (
+175 176) () 0 () () () 0 0)
+177 'log_warn' 'logging_mod' 'log_warn' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 178 0 (
+179 180) () 0 () () () 0 0)
+181 'logging_mod' 'logging_mod' 'logging_mod' 1 ((MODULE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ()
+() () 0 0)
+182 'max_file_name_len' 'io_constants' 'max_file_name_len' 1 ((
+PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4
+0 0 INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '500') ()
+0 () () () 0 0)
+183 'max_var_file' 'io_constants' 'max_var_file' 1 ((PARAMETER
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0
+INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '30') () 0 ()
+() () 0 0)
+184 'nf90_noerr' 'netcdf' 'nf90_noerr' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0') () 0 () () () 0 0)
+185 'string_utils_mod' 'string_utils_mod' 'string_utils_mod' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+28 'var_ncdf' 'driver_ncdf_mod' 'var_ncdf' 1 ((DERIVED UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 ((
+186 'id' (INTEGER 4 0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN) UNKNOWN-ACCESS ()) (187 'ndims' (INTEGER 4
+0 0 INTEGER ()) () (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) UNKNOWN-ACCESS ()) (188 'is_record' (LOGICAL 4 0 0 LOGICAL ())
+() (UNKNOWN-FL UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN)
+UNKNOWN-ACCESS ())) PUBLIC (() ()) () 0 0)
+94 'name' '' 'name' 93 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+11 'formatted_string' '' 'formatted_string' 9 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN RESULT) (CHARACTER 1 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 () () () 0 0)
+10 'variable' '' 'variable' 9 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+17 'formatted_string' '' 'formatted_string' 15 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN RESULT) (CHARACTER 1 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 () () () 0 0)
+16 'variable' '' 'variable' 15 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (COMPLEX 4 0 0 COMPLEX ()) 0 0 () () 0 () () () 0 0)
+8 'formatted_string' '' 'formatted_string' 6 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN RESULT) (CHARACTER 1 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 () () () 0 0)
+7 'variable' '' 'variable' 6 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+14 'formatted_string' '' 'formatted_string' 12 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN RESULT) (CHARACTER 1 0 0 CHARACTER ((
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '50'))) 0 0 () () 0 () () () 0 0)
+13 'variable' '' 'variable' 12 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+163 'message' '' 'message' 161 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+167 'message' '' 'message' 165 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+166 'proc_name' '' 'proc_name' 165 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+162 'proc_name' '' 'proc_name' 161 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+180 'message' '' 'message' 178 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+179 'proc_name' '' 'proc_name' 178 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+176 'message' '' 'message' 174 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+175 'proc_name' '' 'proc_name' 174 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+158 'proc_name' '' 'proc_name' 157 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+159 'message' '' 'message' 157 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+95 'mode' '' 'mode' 93 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+96 'file' '' 'file' 93 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN RESULT) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+50 'var_id' '' 'var_id' 48 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+49 'file' '' 'file' 48 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+51 'name' '' 'name' 48 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+52 'value' '' 'value' 48 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+43 'file' '' 'file' 42 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+44 'var_id' '' 'var_id' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+45 'name' '' 'name' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+46 'value' '' 'value' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+55 'file' '' 'file' 54 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+56 'dim_name' '' 'dim_name' 54 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+57 'dim_len' '' 'dim_len' 54 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+58 'dim_id' '' 'dim_id' 54 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+61 'file' '' 'file' 60 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+62 'dim_name' '' 'dim_name' 60 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+63 'dim_id' '' 'dim_id' 60 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN RESULT) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+66 'file' '' 'file' 65 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+67 'var_name' '' 'var_name' 65 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+68 'dims_in' '' 'dims_in' 65 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+69 'is_record' '' 'is_record' 65 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+70 'var_id' '' 'var_id' 65 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN RESULT ALWAYS_EXPLICIT) (INTEGER 4 0 0 INTEGER ()) 0 0 ()
+() 0 () () () 0 0)
+73 'file' '' 'file' 72 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+126 'file' '' 'file' 125 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+127 'record' '' 'record' 125 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+100 'var_id' '' 'var_id' 98 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+99 'file' '' 'file' 98 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+101 'values' '' 'values' 98 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+102 'start' '' 'start' 98 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+103 'count' '' 'count' 98 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+83 'file' '' 'file' 82 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+84 'var_name' '' 'var_name' 82 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+85 'var_id' '' 'var_id' 82 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+86 'ndims' '' 'ndims' 82 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+87 'dim_ids' '' 'dim_ids' 82 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+88 'is_record' '' 'is_record' 82 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+37 'file' '' 'file' 36 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+38 'var_id' '' 'var_id' 36 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+39 'name' '' 'name' 36 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+40 'value' '' 'value' 36 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+120 'file' '' 'file' 119 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+121 'var_id' '' 'var_id' 119 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+122 'value' '' 'value' 119 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+123 'start' '' 'start' 119 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+31 'file' '' 'file' 30 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+107 'var_id' '' 'var_id' 105 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+114 'var_id' '' 'var_id' 112 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+113 'file' '' 'file' 112 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+115 'values' '' 'values' 112 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (3 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ())
+0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+116 'start' '' 'start' 112 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+117 'count' '' 'count' 112 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+106 'file' '' 'file' 105 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+108 'values' '' 'values' 105 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ())
+0 '1') ()) 0 () () () 0 0)
+109 'start' '' 'start' 105 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+110 'count' '' 'count' 105 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+152 'var_id' '' 'var_id' 150 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+151 'file' '' 'file' 150 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+153 'value' '' 'value' 150 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (REAL 4 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+154 'start' '' 'start' 150 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+131 'var_id' '' 'var_id' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+130 'file' '' 'file' 129 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+132 'values' '' 'values' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (1 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+133 'start' '' 'start' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+134 'count' '' 'count' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+137 'file' '' 'file' 136 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+139 'values' '' 'values' 136 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (2 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ())
+0 '1') ()) 0 () () () 0 0)
+140 'start' '' 'start' 136 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+141 'count' '' 'count' 136 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+138 'var_id' '' 'var_id' 136 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+145 'var_id' '' 'var_id' 143 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+144 'file' '' 'file' 143 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+146 'values' '' 'values' 143 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (REAL 4 0 0 REAL ()) 0 0 () (3 ASSUMED_SHAPE (CONSTANT
+(INTEGER 4 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ())
+0 '1') () (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+147 'start' '' 'start' 143 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+148 'count' '' 'count' 143 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DIMENSION DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '4')) 0 () () () 0 0)
+34 'file' '' 'file' 33 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+91 'file' '' 'file' 90 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+76 'file' '' 'file' 75 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(DERIVED 20 0 0 DERIVED ()) 0 0 () () 0 () () () 0 0)
+77 'dim_name' '' 'dim_name' 75 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+78 'dim_id' '' 'dim_id' 75 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+79 'dim_len' '' 'dim_len' 75 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+80 'is_record_dim' '' 'is_record_dim' 75 ((VARIABLE OUT UNKNOWN-PROC
+UNKNOWN UNKNOWN DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0
+0)
+170 'originating_proc' '' 'originating_proc' 169 ((VARIABLE IN
+UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0
+() () 0 () () () 0 0)
+171 'message' '' 'message' 169 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+172 'ncdf_err' '' 'ncdf_err' 169 ((VARIABLE IN UNKNOWN-PROC UNKNOWN
+UNKNOWN DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+)
+
+('driver_ncdf_mod' 0 18 'extensions' 0 19 'file_ncdf' 0 20
+'file_ncdf_advance' 0 29 'file_ncdf_close' 0 32 'file_ncdf_def_attr_char'
+0 35 'file_ncdf_def_attr_int' 0 41 'file_ncdf_def_attr_real' 0 47
+'file_ncdf_def_dim' 0 53 'file_ncdf_def_record_dim' 0 59
+'file_ncdf_def_var' 0 64 'file_ncdf_enddef' 0 71 'file_ncdf_inquire_dim'
+0 74 'file_ncdf_inquire_var' 0 81 'file_ncdf_introspect' 0 89
+'file_ncdf_open' 0 92 'file_ncdf_read_var_1d' 0 97 'file_ncdf_read_var_2d'
+0 104 'file_ncdf_read_var_3d' 0 111 'file_ncdf_read_var_scalar' 0 118
+'file_ncdf_seek' 0 124 'file_ncdf_write_var_1d' 0 128
+'file_ncdf_write_var_2d' 0 135 'file_ncdf_write_var_3d' 0 142
+'file_ncdf_write_var_scalar' 0 149 'io_constants' 0 155 'log_debug' 0
+156 'log_error' 0 160 'log_fatal' 0 164 'log_fatal_ncdf' 0 168 'log_info'
+0 173 'log_warn' 0 177 'logging_mod' 0 181 'max_file_name_len' 0 182
+'max_var_file' 0 183 'nf90_noerr' 0 184 'string_utils_mod' 0 185
+'var_ncdf' 0 28)

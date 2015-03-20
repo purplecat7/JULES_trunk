@@ -1,0 +1,160 @@
+GFORTRAN module version '0' created from pftparm.F90 on Tue Mar 17 17:45:30 2015
+MD5:cf252df3d8d4df20afa481be1e84fe57 -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'a_wl' 'pftparm' 'a_wl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+3 'a_ws' 'pftparm' 'a_ws' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+4 'albsnc_max' 'pftparm' 'albsnc_max' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+5 'albsnc_min' 'pftparm' 'albsnc_min' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+6 'albsnf_max' 'pftparm' 'albsnf_max' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+7 'alnir' 'pftparm' 'alnir' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+8 'alpar' 'pftparm' 'alpar' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+9 'alpha' 'pftparm' 'alpha' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+10 'b_wl' 'pftparm' 'b_wl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+11 'c3' 'pftparm' 'c3' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN ALLOCATABLE DIMENSION) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+12 'catch0' 'pftparm' 'catch0' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+13 'dcatch_dlai' 'pftparm' 'dcatch_dlai' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+14 'dfp_dcuo' 'pftparm' 'dfp_dcuo' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+15 'dgl_dm' 'pftparm' 'dgl_dm' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+16 'dgl_dt' 'pftparm' 'dgl_dt' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+17 'dqcrit' 'pftparm' 'dqcrit' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+18 'dust_veg_scj' 'pftparm' 'dust_veg_scj' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+19 'dz0v_dh' 'pftparm' 'dz0v_dh' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+20 'emis_pft' 'pftparm' 'emis_pft' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+21 'eta_sl' 'pftparm' 'eta_sl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+22 'f0' 'pftparm' 'f0' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1 DEFERRED ()
+()) 0 () () () 0 0)
+23 'fd' 'pftparm' 'fd' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1 DEFERRED ()
+()) 0 () () () 0 0)
+24 'fl_o3_ct' 'pftparm' 'fl_o3_ct' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+25 'fsmc_of' 'pftparm' 'fsmc_of' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+26 'g_leaf_0' 'pftparm' 'g_leaf_0' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+27 'glmin' 'pftparm' 'glmin' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+28 'infil_f' 'pftparm' 'infil_f' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+29 'kext' 'pftparm' 'kext' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+30 'kpar' 'pftparm' 'kpar' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+31 'neff' 'pftparm' 'neff' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+32 'nl0' 'pftparm' 'nl0' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+33 'nr_nl' 'pftparm' 'nr_nl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+34 'ns_nl' 'pftparm' 'ns_nl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+35 'omega' 'pftparm' 'omega' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+36 'omnir' 'pftparm' 'omnir' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+37 'orient' 'pftparm' 'orient' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (INTEGER 4 0 0 INTEGER ()) 0 0 ()
+(1 DEFERRED () ()) 0 () () () 0 0)
+38 'pftname' 'pftparm' 'pftname' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (CHARACTER 1 0 0
+CHARACTER ((CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '20'))) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+39 'pftparm' 'pftparm' 'pftparm' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+40 'r_grow' 'pftparm' 'r_grow' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+41 'rootd_ft' 'pftparm' 'rootd_ft' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+42 'sigl' 'pftparm' 'sigl' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+43 'tleaf_of' 'pftparm' 'tleaf_of' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+44 'tlow' 'pftparm' 'tlow' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+45 'tupp' 'pftparm' 'tupp' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ()) 0 0 () (1
+DEFERRED () ()) 0 () () () 0 0)
+46 'z0hm_pft' 'pftparm' 'z0hm_pft' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 0 0 REAL ())
+0 0 () (1 DEFERRED () ()) 0 () () () 0 0)
+)
+
+('a_wl' 0 2 'a_ws' 0 3 'albsnc_max' 0 4 'albsnc_min' 0 5 'albsnf_max' 0
+6 'alnir' 0 7 'alpar' 0 8 'alpha' 0 9 'b_wl' 0 10 'c3' 0 11 'catch0' 0
+12 'dcatch_dlai' 0 13 'dfp_dcuo' 0 14 'dgl_dm' 0 15 'dgl_dt' 0 16 'dqcrit'
+0 17 'dust_veg_scj' 0 18 'dz0v_dh' 0 19 'emis_pft' 0 20 'eta_sl' 0 21 'f0'
+0 22 'fd' 0 23 'fl_o3_ct' 0 24 'fsmc_of' 0 25 'g_leaf_0' 0 26 'glmin' 0
+27 'infil_f' 0 28 'kext' 0 29 'kpar' 0 30 'neff' 0 31 'nl0' 0 32 'nr_nl'
+0 33 'ns_nl' 0 34 'omega' 0 35 'omnir' 0 36 'orient' 0 37 'pftname' 0 38
+'pftparm' 0 39 'r_grow' 0 40 'rootd_ft' 0 41 'sigl' 0 42 'tleaf_of' 0 43
+'tlow' 0 44 'tupp' 0 45 'z0hm_pft' 0 46)
