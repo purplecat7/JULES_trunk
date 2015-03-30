@@ -172,7 +172,7 @@ CONTAINS
         !therefore be carried over between calls to this function
         !http://stackoverflow.com/questions/3509208/does-fortran-preserve-the-value-of-internal-variables-through-function-and-subro
 
-        INTEGER, PARAMETER :: c_mpi_zero = 0, c_mpi_tag = 1 !constants
+        INTEGER, PARAMETER :: c_mpi_zero = 0, c_mpi_tag = MPI_ANY_TAG !constants
         INTEGER :: buffer = 0
         LOGICAL:: interrupt, retval
 
@@ -184,7 +184,7 @@ CONTAINS
 
                 !If this instance is the primary one, then get all the other's variables
                 !CALL log_info("Main", empi_msg)
-                CALL MPI_RECV(buffer, 1, MPI_INTEGER, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE, empi_err)
+                CALL MPI_RECV(buffer, 1, MPI_INTEGER, MPI_ANY_SOURCE, c_mpi_tag, MPI_COMM_WORLD, MPI_STATUS_IGNORE, empi_err)
                 test_total = test_total + buffer
 
             ELSE
@@ -214,7 +214,7 @@ CONTAINS
         IMPLICIT NONE
         INTEGER err_code, smcl_size, tsoil_size, tstar_tile_size, states, state_dims
         INTEGER, ALLOCATABLE, DIMENSION(:) :: state_dim_arr !an array to hold the state vector dimensions
-        INTEGER, PARAMETER :: c_mpi_tag = 1 !constants
+        INTEGER, PARAMETER :: c_mpi_tag = MPI_ANY_TAG !constants
 
         !Set up an array to store the dimensions of the state arrays so that the particle
         !filter knows them
@@ -269,7 +269,7 @@ CONTAINS
     SUBROUTINE empi_send_obs_info()
         IMPLICIT NONE
         INTEGER :: obs_size, err_code
-        INTEGER, PARAMETER :: c_mpi_tag = 1 !constant
+        INTEGER, PARAMETER :: c_mpi_tag = MPI_ANY_TAG !constant
         
         !****************************************************************************
         !This is currently a 'magic' number but should ideally be read from file.
@@ -320,7 +320,7 @@ CONTAINS
         
         !TODO check ordering - may need to reverse - RECV then SEND and split out to be either side of model timestep
         IMPLICIT NONE
-        INTEGER, PARAMETER :: c_mpi_tag = 1 !constants
+        INTEGER, PARAMETER :: c_mpi_tag = MPI_ANY_TAG !constants
         INTEGER buffer_size
 
         DO count0 = 1, smcl_size_0
