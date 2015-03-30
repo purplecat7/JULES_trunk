@@ -21,7 +21,7 @@ MODULE empire_mod
     INTEGER :: num_filters                                           !the total number of DA processes
     INTEGER :: total_procs_coupled                              !the number of processes on the model/filter coupler
                                                                                 !i.e. all filters and all model head nodes
-    INTEGER, PARAMETER :: c_mpi_tag = 1                   !constant
+    INTEGER, PARAMETER :: c_mpi_tag = MPI_ANY_TAG                   !constant
     INTEGER, DIMENSION(:), ALLOCATABLE :: requests    !an array of requests sent indexed by model number
     !INTEGER, DIMENSION(:, :), ALLOCATABLE :: statuses  !and one for the mpi return status for each
     INTEGER, ALLOCATABLE, DIMENSION(:) :: gblcount     !the number of ensemble members associated with each DA process
@@ -502,7 +502,7 @@ CONTAINS
 
         INTEGER :: iter1, count, now
         INTEGER :: model_rank_id
-        INTEGER, PARAMETER :: c_tag = 1, timeout = 3
+        INTEGER, PARAMETER :: timeout = 3
         LOGICAL :: all_complete, msg_flag
          
 !        !Set up the flag for entry into the loop
@@ -534,7 +534,7 @@ CONTAINS
                     now = TIME()
                     DO WHILE (TIME() .LT. now + timeout)
                         msg_flag = .FALSE.
-                        CALL MPI_IPROBE(model_rank_id, c_tag, coupling_comms, &
+                        CALL MPI_IPROBE(model_rank_id, c_mpi_tag, coupling_comms, &
                                     msg_flag, empi_status, empi_err)
                         IF (msg_flag .EQV. .TRUE.) THEN
                             PRINT *, 'Message waiting '
@@ -546,7 +546,7 @@ CONTAINS
                     IF (msg_flag .EQV. .TRUE.) THEN
                         
                         CALL MPI_RECV(state_vector, num_state_params, MPI_DOUBLE_PRECISION, &
-                                      model_rank_id, c_tag, coupling_comms, empi_status, empi_err)
+                                      model_rank_id, c_mpi_tag, coupling_comms, empi_status, empi_err)
                         PRINT*, 'Particle filter ', filter_id, 'has received state_vectors over mpi for model ',model_rank_id  
 
                     ELSE !no message waiting, flag should be False, i.e. the run *has* finished
@@ -569,7 +569,7 @@ CONTAINS
                     !If it's still running, send the state vectors back
                     IF (end_model_runs(iter1) .eqv. .FALSE.) THEN
                         CALL MPI_SEND(state_vector, num_state_params, MPI_DOUBLE_PRECISION, &
-                                               model_rank_id, c_tag, coupling_comms, empi_err)
+                                               model_rank_id, c_mpi_tag, coupling_comms, empi_err)
                         PRINT*, 'Particle filter ', filter_id, 'has sent state_vectors over mpi for model ',model_rank_id
                     !ELSE !run is complete
     !                    PRINT *, 'getting completion message'
